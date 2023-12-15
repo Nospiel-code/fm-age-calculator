@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <style>
+     .remove-arrow::-webkit-inner-spin-button, 
+        .remove-arrow::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        } 
+  
+  </style>
+
+</head>
+
+<body class="h-screen bg-neutral-100 flex flex-col items-center justify-center">
+
+  <main class="my-auto">
+    <!--  CARD  -->
+    <div class="bg-white mx-4 rounded-custom relative md:max-w-[43.75rem] md:rounded-customMD">
+      <div class="flex flex-col px-4 py-10 md:px-10">
+        <!-- FORM -->
+        <form class="form flex flex-col justify-center items-center novalidate">
+          <div class="flex gap-4 pb-14 mb-12 border-b-2 md:pb-10 md:gap-6">
+            <div class="flex flex-col relative mb-6">
+              <label class="labelDay uppercase text-neutral-500 text-sm tracking-wider md:pb-2 md:tracking-widest" for="dayInput">Day</label>
+              <input class="input remove-arrow outline-none border-2 w-full p-2 text-2xl rounded-md focus:border-primaryP md:p-3 focus:ring-0" 
+                     id="dayInput" 
+                     type="number" 
+                     placeholder="DD"
+                     required>
+              <small class="errorDay -bottom-10 absolute xs:-bottom-6 italic pt-2 text-primaryR"></small>
+            </div>
+            <div class="flex flex-col relative mb-6">
+              <label class="labelMonth uppercase text-neutral-500 text-sm tracking-wider md:pb-2 md:tracking-widest" for="monthInput">Month</label>
+              <input class="input remove-arrow outline-none border-2 w-full p-2 text-2xl rounded-md focus:border-primaryP md:p-3 focus:ring-0" 
+                     id="monthInput" 
+                     type="number" 
+                     placeholder="MM"
+                     required>
+              <small class="errorMonth -bottom-10 italic pt-2 absolute xs:-bottom-6 text-primaryR"></small>
+            </div>
+            <div class="flex flex-col md:pr-36 relative mb-6">
+              <label class="labelYear uppercase text-neutral-500 text-sm tracking-wider md:pb-2 md:tracking-widest" for="yearInput">Year</label>
+              <input class="input remove-arrow outline-none border-2 w-full p-2 text-2xl rounded-md focus:border-primaryP md:p-3 focus:ring-0" 
+                     id="yearInput" 
+                     type="number" 
+                     placeholder="YYYY"
+                     required>
+              <small class="errorYear -bottom-10 italic pt-2 absolute xs:-bottom-6 text-primaryR"></small>
+            </div>
+          </div>
+          <div class="absolute top-[8.5rem] md:top-[7.8125rem] md:end-10">
+            <button 
+              type="submit" 
+              class="submit bg-primaryP my-8 rounded-full w-12 h-12 flex justify-center items-center hover:bg-black hover:cursor-pointer md:w-[4.5rem] md:h-[4.5rem]">
+              <img class="w-1/2" src="./images/icon-arrow.svg" alt="arrow icon">
+            </button>
+          </div>
+        </form>
+
+        <!-- OUTPUT  -->
+        <div class="text-5xl font-bold italic md:text-[5rem]">
+          <h2 class="md:pb-2"><span id="yearOutput" class="text-primaryP">--</span> years</h2>
+          <h2 class="md:pb-2"><span id="monthOutput" class="text-primaryP">--</span> months</h2>
+          <h2 class="md:pb-2"><span id="dayOutput" class="text-primaryP">--</span> days</h2>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <div class="text-center text-xs">
+    Challenge by <a class="underline" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a class="underline" href="#">Thomas Schütz</a>.
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
