@@ -34,7 +34,9 @@ Users should be able to:
 
 ### Screenshot
 
-
+![image](https://github.com/Nospiel-code/fm-age-calculator/assets/130290610/1e1aad42-5ac5-40e8-9f0e-05530693553b)
+![image](https://github.com/Nospiel-code/fm-age-calculator/assets/130290610/1cbb79ed-b615-442d-9497-7dfa5ecdee83)
+![image](https://github.com/Nospiel-code/fm-age-calculator/assets/130290610/002c3cc8-2b45-4a9b-8baf-6e127ad3af21)
 
 ### Links
 
